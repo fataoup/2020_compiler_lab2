@@ -85,11 +85,13 @@ exp			{//keyword exp
 
 \n			{	// end of a function
 				// output the table
+				/*
 				map<string, double>::iterator iter;
 				for (iter = table.begin(); iter != table.end(); iter++)
 				{
 					cout << iter->first << " equals " << iter->second << endl;
 				} 
+				*/
 				return '\n';
 			} // end of \n
 		
