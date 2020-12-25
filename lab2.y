@@ -34,7 +34,11 @@
 %%
 
 
-REV_AutoDiff	:	func_def // TODO: build a parse tree
+REV_AutoDiff	:	func_def 
+					{
+						T.level_walk();
+						cout << "press ctrl+D to exit..." << endl;
+					}
 				;
 
 func_def		:	'f' '(' var_list ')' ':' expr '\n'
