@@ -121,7 +121,7 @@ expr			:	VAR
 int main()
 {
 
-	printf("please input a legal function: \n");
+	printf("input a legal function: \n");
 	yyparse();
 	//cout << "val = " << value << endl;
 }
